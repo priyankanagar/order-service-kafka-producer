@@ -1,4 +1,4 @@
-package com.example.orders;
+package com.example.orders.messaging;
 
 import java.util.HashMap;
 import java.util.Map;

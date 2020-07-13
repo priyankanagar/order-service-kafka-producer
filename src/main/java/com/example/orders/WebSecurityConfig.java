@@ -1,5 +1,7 @@
 package com.example.orders;
 
+import com.example.orders.security.JwtAuthenticationEntryPoint;
+import com.example.orders.security.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

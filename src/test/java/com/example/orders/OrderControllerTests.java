@@ -5,6 +5,10 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.example.orders.security.JwtAuthenticationController;
+import com.example.orders.security.JwtAuthenticationEntryPoint;
+import com.example.orders.security.JwtRequestFilter;
+import com.example.orders.security.JwtUserDetailsService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.math.BigDecimal;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.orders;
+package com.example.orders.security;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import java.io.IOException;

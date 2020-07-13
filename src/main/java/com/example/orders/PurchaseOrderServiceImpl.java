@@ -24,7 +24,7 @@ public class PurchaseOrderServiceImpl implements PurchaseOrderService {
     @Override
     public PurchaseOrder createOrder(PurchaseOrder order) {
         PurchaseOrder newOrder = orderRepository.save(order);
-        sendMessage(newOrder.toString());
+        sendMessage(newOrder);
         return newOrder;
     }
 
@@ -33,9 +33,9 @@ public class PurchaseOrderServiceImpl implements PurchaseOrderService {
         return orderRepository.findById(orderId).get();
     }
 
-    private void sendMessage(String msg) {
+    private void sendMessage(PurchaseOrder msg) {
         ListenableFuture<SendResult<String, String>> future =
-                kafkaTemplate.send(topicName, msg);
+                kafkaTemplate.send(topicName, Long.toString(msg.getId()), msg.toString());
 
         future.addCallback(new ListenableFutureCallback<SendResult<String, String>>() {
 

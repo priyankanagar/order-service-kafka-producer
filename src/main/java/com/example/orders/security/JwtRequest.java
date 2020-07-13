@@ -1,4 +1,4 @@
-package com.example.orders;
+package com.example.orders.security;
 
 import java.io.Serializable;
 

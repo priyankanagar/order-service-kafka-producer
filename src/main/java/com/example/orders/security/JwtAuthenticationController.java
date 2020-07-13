@@ -1,4 +1,4 @@
-package com.example.orders;
+package com.example.orders.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
