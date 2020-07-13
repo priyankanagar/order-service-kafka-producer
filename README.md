@@ -17,9 +17,9 @@ I have created a Spring Boot microservice which takes in a JSON request payload,
 
 To run the application in local(without Docker), please make sure you have:
 
-Maven 3.2+
-Java 8, 9, 10 or 11
-Kafka 2.5 (https://kafka.apache.org/quickstart)
+1. Maven 3.2+
+2. Java 8, 9, 10 or 11
+3. Kafka 2.5 (https://kafka.apache.org/quickstart)
 
 Steps:
 
