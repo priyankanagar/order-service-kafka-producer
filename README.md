@@ -31,5 +31,5 @@ Download the source code in your local
 5. Call POST method on localhost:8080/orders with the following payload: Header: Key: Authorization Value Bearer <token from step 4>
 Sample Body: { "orderAmount": "1000.00", "orderDetails": [ { "itemName": "Robot toy", "itemAmount": "700" }, { "itemName": "Legos", "itemAmount": "300" } ] } Note down the orderId in the response. We will use it in the next step
 6. Call GET method on localhost:8080/orders/{orderId from previous step} and Header: Key: Authorization Value Bearer <token from step 4>. You should see the order created in step 4.
-7. Run the following command in a terminal window: bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic orders --from-beginning
+7. Run the following command in a terminal window containing Kafka installation: bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic orders --from-beginning
 8. You should see the order created in above steps
